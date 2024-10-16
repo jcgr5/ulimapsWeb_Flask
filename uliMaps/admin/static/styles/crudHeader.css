@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&display=swap');
+
+body{
+    font-family: "Kaisei Decol", serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 100vh;
+    background: rgb(42,2,2);
+    background: linear-gradient(180deg, rgba(42,2,2,1) 0%, rgba(162,10,28,1) 70%);
+    color: white;
+}
+
+.container-fluid{
+    border: white solid;
+}
+
+.containerCrud{
+    height: 90vh;
+}
