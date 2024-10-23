@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>UliMaps</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <link rel="stylesheet" href="/static/styles/crudHeader.css">
+        
+    </head>
+
+    <body>
+
+        <div class="container-fluid">
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+                <a class="navbar-brand" href="/crud">UliMaps</a>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/crudExterior">Punto Interes Exterior</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/crudEstructura">Estructura</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/crudPiso">Piso</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/crudInterior">Punto Interes Interior</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/crudParqueadero">Parqueadero</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+
+        </div>
+
+        {% block content %}
+
+        
+        {% endblock %}
+
+
+
+            

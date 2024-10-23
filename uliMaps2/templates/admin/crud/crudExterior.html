@@ -1,0 +1,73 @@
+{% include 'base/crudHeader.html' %}
+
+<div class="container" style="margin-top: 30px; margin-bottom: 30px;">
+
+    <div class="row justify-content-center align-items-center g-2">
+        <div class="col-md-4">
+
+            <div class="" style="width: 18rem;">
+
+                <h5 class="card-header">Formulario de Registro</h5>
+
+                <div class="card-body">
+
+                  <form action="/sitio/guardarU" method="post">
+
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Código</label>
+                      <input type="number" class="form-control" name="codigo" aria-describedby="emailHelp" placeholder="Ingresar código del usuario">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Usuarios</label>
+                      <input type="text" class="form-control" name="usuario" placeholder="Ingresar usuario" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Contraseña</label>
+                        <input type="text" class="form-control" name="contraseña" placeholder="Ingresar contraseña" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Crear</button>
+
+                  </form>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-8">
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Código</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Latitud</th>
+                    <th scope="col">Longitud</th>
+                    <th scope="col">Activo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {%for punto in puntosExterior: %}
+
+                  <tr>
+                    <th>{{punto['id_puntoExterior']}}</th>
+                    <td>{{punto['nombre']}}</td>
+                    <td>{{punto['latitud']}}</td>
+                    <td>{{punto['longitud']}}</td>
+                    <td>{{punto['activo']}}</td>
+                  </tr>
+
+                  {%endfor%}
+                </tbody>
+              </table>
+
+        </div>
+        
+    </div>
+    
+</div>
